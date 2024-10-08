@@ -1,0 +1,51 @@
+.calendar {
+  display: flex;
+  flex-direction: column;
+  /* Align items vertically */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  height: 100vh;
+  /* Make calendar take full viewport height */
+  width: 100%;
+  /* Make calendar take full viewport width */
+}
+
+.calendar {
+  width: 500px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-grid {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.day-cell {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  text-align: center;
+  cursor: pointer;
+}
+
+.day-cell.weekend {
+  background-color: #eee;
+}
+
+.day-cell.holiday {
+  background-color: lightblue;
+}
+
+.day-cell.working-day {
+  background-color: lightgreen;
+}
